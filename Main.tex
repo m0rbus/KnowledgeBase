@@ -1,0 +1,83 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Praeambel
+%
+% Sammlung n�tzlichen Wissens der genialsten Coder der Welt !
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass
+[
+a4paper,
+12pt,
+german,
+halfparskip
+]
+{report}
+
+
+\usepackage[utf8]{inputenc}  			% Schriftsatz (hier UTF8)
+\usepackage[T1]{fontenc}				% Zeichenencoding
+\usepackage{Palatino}				% Schriftarten Typset           
+\usepackage[ngerman]{babel}		% Babel für die neue Deutsche Rechtschreibung
+\usepackage{listings}						% Für Listen (hier besonders der source code)
+\lstset{language=Haskell}				% Listings für Haskell optimieren
+%\usepackage{paralist} 					% für erweiterte listen
+\usepackage{amstext}          			% für Klartext via \text{} in Formeln
+\usepackage{amsfonts}         			% 
+\usepackage{amssymb,amsmath}    % für komplexere Formeln (Mengensymbole ...)
+\usepackage[bottom]{footmisc} 		% Fussnoten am Seitenende
+\usepackage{array}            			% für Tabellen: bindet tabular-Umgebung ein
+\usepackage{ntheorem}					% mathematische theorem bibliotheksunterstützung
+\usepackage{theorem}					% mathematische theorem bibliotheksunterstützung
+\usepackage{pdfpages}         			% für die Einbindung kompletter pdf-*Seiten*
+%\usepackage{parskip}          			% zw. Absätzen: eine knappe Leerzeile statt hängender Einzüge
+\usepackage{xcolor}           			% farbiger Text
+\usepackage[hyphens]{url}     		% für \url{http://www}, Option hyp erlaubt auch Umbruch nach "-"
+\usepackage{makeidx}          			% Package zur Indexerstellung
+\usepackage{multicol}         			% zur Indexerstellung in zwei Spalten
+\usepackage[numbers, square]{natbib}   	% Für \setlength{\bibsep}{3mm}; square macht eckige Klammern
+
+
+%%%%  Titel und Autor Informationen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{\LARGE{Knowledge Base} \\
+A brief Collection of Everything}
+\author{Mirco Cred\'{e} \& Stefan Klug}
+\date{23. Februar, 2012}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%  Index erstellen %%%%%%%
+\makeindex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{document}
+
+
+%%%%  Titelseite erstellen %%%%%%%
+
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\pagestyle{empty}
+\tableofcontents
+\pagestyle{plain}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\include{Java}
+
+\interlinepenalty=10000 % Literatureinträge: Absätze zusammenhalten
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Literatur}   
+\include{Bibliothek}
+
+\end{document}

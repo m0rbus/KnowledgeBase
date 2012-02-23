@@ -1,0 +1,60 @@
+bin/
+out/
+
+# Java #
+######################
+*.class
+*tmp
+
+# TomCat (for WebApp) #
+######################
+.settings/
+build/
+
+# SQLite #
+######################
+#*.sqlitedb
+
+# IDE's project files #
+######################
+.idea/
+#*.iml
+.idea/workspace.xml
+.idea/dictionaries/
+.idea/inspectionProfiles/
+
+.classpath
+.project
+
+
+# Temp files #
+######################
+*~
+*.swp
+*.bak
+
+
+# OS generated files #
+######################
+# Mac specified FileSystem Thumbfile-Cache
+.DS_Store
+ehthumbs.db
+Icon?
+# Windows specified FileSystem Thumbfile-Cache
+Thumbs.db
+
+
+# LaTeX files #
+#######################
+*.log
+*.aux
+*.idx
+*.lof
+*.lol
+*.lot
+*.nlo
+*.out
+*.toc
+*.bbl
+*.thm
+*.blg
